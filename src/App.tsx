@@ -101,7 +101,10 @@ function App() {
   };
 
   return (
-    <section className="flex flex-col text-center pt-2">
+    <form
+      onSubmit={handleButtonSimpan}
+      className="flex flex-col text-center pt-2"
+    >
       <h2 className="text-2xl font-semibold">Aplikasi Penilaian Mahasiswa</h2>
       <div className="grid grid-rows-4 w-1/2 mx-auto mt-6">
         <div className="grid grid-cols-5 gap-4">
@@ -123,13 +126,13 @@ function App() {
       </div>
       <div className="flex justify-end w-[75%]">
         <button
-          onClick={handleButtonSimpan}
+          type="submit"
           className="bg-black text-white px-2 text-xl mt-10"
         >
           Simpan
         </button>
       </div>
-    </section>
+    </form>
   );
 }
 

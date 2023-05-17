@@ -12,6 +12,7 @@ const Input: React.FC<InputProps> = ({ onChange }) => {
       type="number"
       onChange={onChange}
       className="border"
+      required
       min={1}
       max={10}
     />
